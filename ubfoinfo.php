@@ -1,0 +1,28 @@
+#!/usr/bin/php
+<?php
+/* UbFoInfo */
+/* UbFoInfo is a program to provide good info to online communities and is tailor made for ubuntu */
+
+?>
+===========================
+==> UbFoInfo V0.1 Alpha <==
+===========================
+<?
+
+if (PHP_SAPI != "cli")
+{
+	echo "Error: Sorry, i need a terminal!".PHP_EOL;
+	exit(1);
+}
+
+include "functions.php";
+
+if ($argc>1)
+{
+	cli::go();
+} else {
+	gui::go();
+}
+
+exit(0);
+

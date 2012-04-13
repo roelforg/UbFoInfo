@@ -1,6 +1,3 @@
-all: run
-clean:
-	rm *~ log.txt
+all:
+	./ubfoinfo.php --networking
 
-run:
-	./ubfoinfo.sh

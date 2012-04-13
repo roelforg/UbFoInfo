@@ -1,0 +1,4 @@
+<?php
+include "display.php";
+include "cli.php";
+

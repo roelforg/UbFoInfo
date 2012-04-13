@@ -1,0 +1,9 @@
+<?php
+class gui
+{
+public function go()
+{
+
+}
+};
+
