@@ -24,3 +24,5 @@ if ($argc>1)
 	gui::go();
 }
 
+exit(0);
+

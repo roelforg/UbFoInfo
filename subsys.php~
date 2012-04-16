@@ -83,7 +83,7 @@ SCRIPT;
 		{
 			$report->enter_section(substr($file,strpos($file,"---")+3));
 			$code = rtrim(file_get_contents("subsys/".$file));
-			$report->add(shell_exec("/bin/bash subsys/".$file));
+			$report->add(shell_exec("/bin/bash subsys/".$file);
 			$report->exit_section(substr($file,strpos($file,"---")+3));
 		}
 		$report->exit_section($cat);

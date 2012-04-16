@@ -9,12 +9,6 @@
 ===========================
 <?
 
-if (PHP_SAPI != "cli")
-{
-	echo "Error: Sorry, i need a terminal!".PHP_EOL;
-	exit(1);
-}
-
 include "functions.php";
 
 if ($argc>1)

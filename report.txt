@@ -1,0 +1,456 @@
+=>networking
+==>Network-adapter-info
+eth0      Link encap:Ethernet  HWaddr 00:16:d3:ee:3a:7b  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:16 
+
+irda0     Link encap:IrLAP  HWaddr 00:00:00:00  
+          NOARP  MTU:2048  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:8 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:4 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:4 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:240 (240.0 B)  TX bytes:240 (240.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr 00:1b:77:9e:ad:ff  
+          inet addr:192.168.0.111  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::21b:77ff:fe9e:adff/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:12016 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9410 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:12319751 (12.3 MB)  TX bytes:1699207 (1.6 MB)
+
+
+==>List-hardware
+  *-network
+       description: Ethernet interface
+       product: NetLink BCM5787M Gigabit Ethernet PCI Express
+       vendor: Broadcom Corporation
+       physical id: 0
+       bus info: pci@0000:02:00.0
+       logical name: eth0
+       version: 02
+       serial: 00:16:d3:ee:3a:7b
+       capacity: 1Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt 1000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=tg3 driverversion=3.119 firmware=5787m-v3.23 latency=0 multicast=yes port=twisted pair
+       resources: irq:47 memory:f6000000-f600ffff
+  *-network
+       description: Wireless interface
+       product: PRO/Wireless 3945ABG [Golan] Network Connection
+       vendor: Intel Corporation
+       physical id: 0
+       bus info: pci@0000:04:00.0
+       logical name: wlan0
+       version: 02
+       serial: 00:1b:77:9e:ad:ff
+       width: 32 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list ethernet physical wireless
+       configuration: broadcast=yes driver=iwl3945 driverversion=3.0.0-12-generic firmware=15.32.2.9 ip=192.168.0.111 latency=0 multicast=yes wireless=IEEE 802.11abg
+       resources: irq:46 memory:f8000000-f8000fff
+
+=>sysinfo
+==>List-PCI-hardware
+00:00.0 Host bridge: Intel Corporation Mobile PM965/GM965/GL960 Memory Controller Hub (rev 03)
+00:01.0 PCI bridge: Intel Corporation Mobile PM965/GM965/GL960 PCI Express Root Port (rev 03)
+00:1a.0 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI Controller #4 (rev 03)
+00:1a.1 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI Controller #5 (rev 03)
+00:1a.7 USB Controller: Intel Corporation 82801H (ICH8 Family) USB2 EHCI Controller #2 (rev 03)
+00:1b.0 Audio device: Intel Corporation 82801H (ICH8 Family) HD Audio Controller (rev 03)
+00:1c.0 PCI bridge: Intel Corporation 82801H (ICH8 Family) PCI Express Port 1 (rev 03)
+00:1c.1 PCI bridge: Intel Corporation 82801H (ICH8 Family) PCI Express Port 2 (rev 03)
+00:1c.2 PCI bridge: Intel Corporation 82801H (ICH8 Family) PCI Express Port 3 (rev 03)
+00:1d.0 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI Controller #1 (rev 03)
+00:1d.1 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI Controller #2 (rev 03)
+00:1d.2 USB Controller: Intel Corporation 82801H (ICH8 Family) USB UHCI Controller #3 (rev 03)
+00:1d.7 USB Controller: Intel Corporation 82801H (ICH8 Family) USB2 EHCI Controller #1 (rev 03)
+00:1e.0 PCI bridge: Intel Corporation 82801 Mobile PCI Bridge (rev f3)
+00:1f.0 ISA bridge: Intel Corporation 82801HEM (ICH8M) LPC Interface Controller (rev 03)
+00:1f.1 IDE interface: Intel Corporation 82801HBM/HEM (ICH8M/ICH8M-E) IDE Controller (rev 03)
+00:1f.2 SATA controller: Intel Corporation 82801HBM/HEM (ICH8M/ICH8M-E) SATA AHCI Controller (rev 03)
+00:1f.3 SMBus: Intel Corporation 82801H (ICH8 Family) SMBus Controller (rev 03)
+01:00.0 VGA compatible controller: ATI Technologies Inc Radeon HD 2400 XT
+02:00.0 Ethernet controller: Broadcom Corporation NetLink BCM5787M Gigabit Ethernet PCI Express (rev 02)
+04:00.0 Network controller: Intel Corporation PRO/Wireless 3945ABG [Golan] Network Connection (rev 02)
+0f:06.0 CardBus bridge: Texas Instruments PCIxx12 Cardbus Controller
+0f:06.1 FireWire (IEEE 1394): Texas Instruments PCIxx12 OHCI Compliant IEEE 1394 Host Controller
+0f:06.2 Mass storage controller: Texas Instruments 5-in-1 Multimedia Card Reader (SD/MMC/MS/MS PRO/xD)
+0f:06.3 SD Host controller: Texas Instruments PCIxx12 SDA Standard Compliant SD Host Controller
+
+==>List-USB-hardware
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 006 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 007 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 064e:a101 Suyin Corp. Acer CrystalEye Webcam
+Bus 006 Device 002: ID 050d:0119 Belkin Components F5U120-PC Dual PS/2 Ports / F5U118-UNV ADB Adapter
+Bus 006 Device 003: ID 05e3:1205 Genesys Logic, Inc. Afilias Optical Mouse H3003
+
+==>List-all-hardware
+ubuntu
+    description: Computer
+    width: 32 bits
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 2012MiB
+     *-cpu
+          product: Intel(R) Core(TM)2 Duo CPU     T5250  @ 1.50GHz
+          vendor: Intel Corp.
+          physical id: 1
+          bus info: cpu@0
+          version: 6.15.13
+          serial: 0000-06FD-0000-0000-0000-0000
+          size: 1GHz
+          capacity: 1GHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx x86-64 constant_tsc arch_perfmon pebs bts aperfmperf pni dtes64 monitor ds_cpl est tm2 ssse3 cx16 xtpr pdcm lahf_lm cpufreq
+          configuration: id=1
+        *-logicalcpu:0
+             description: Logical CPU
+             physical id: 1.1
+             width: 64 bits
+             capabilities: logical
+        *-logicalcpu:1
+             description: Logical CPU
+             physical id: 1.2
+             width: 64 bits
+             capabilities: logical
+     *-pci
+          description: Host bridge
+          product: Mobile PM965/GM965/GL960 Memory Controller Hub
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 03
+          width: 32 bits
+          clock: 33MHz
+        *-pci:0
+             description: PCI bridge
+             product: Mobile PM965/GM965/GL960 PCI Express Root Port
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:40 ioport:2000(size=4096) memory:fc000000-fc0fffff ioport:d0000000(size=268435456)
+           *-display
+                description: VGA compatible controller
+                product: Radeon HD 2400 XT
+                vendor: ATI Technologies Inc
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: vga_controller bus_master cap_list rom
+                configuration: driver=fglrx_pci latency=0
+                resources: irq:48 memory:d0000000-dfffffff memory:fc000000-fc00ffff ioport:2000(size=256) memory:fc020000-fc03ffff
+        *-usb:0
+             description: USB Controller
+             product: 82801H (ICH8 Family) USB UHCI Controller #4
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:20 ioport:1800(size=32)
+        *-usb:1
+             description: USB Controller
+             product: 82801H (ICH8 Family) USB UHCI Controller #5
+             vendor: Intel Corporation
+             physical id: 1a.1
+             bus info: pci@0000:00:1a.1
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:21 ioport:1820(size=32)
+        *-usb:2
+             description: USB Controller
+             product: 82801H (ICH8 Family) USB2 EHCI Controller #2
+             vendor: Intel Corporation
+             physical id: 1a.7
+             bus info: pci@0000:00:1a.7
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ehci bus_master cap_list
+             configuration: driver=ehci_hcd latency=0
+             resources: irq:20 memory:fc404800-fc404bff
+        *-multimedia
+             description: Audio device
+             product: 82801H (ICH8 Family) HD Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=HDA Intel latency=0
+             resources: irq:45 memory:fc400000-fc403fff
+        *-pci:1
+             description: PCI bridge
+             product: 82801H (ICH8 Family) PCI Express Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:41 ioport:3000(size=4096) memory:f6000000-f7ffffff ioport:f0000000(size=33554432)
+           *-network
+                description: Ethernet interface
+                product: NetLink BCM5787M Gigabit Ethernet PCI Express
+                vendor: Broadcom Corporation
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: eth0
+                version: 02
+                serial: 00:16:d3:ee:3a:7b
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=tg3 driverversion=3.119 firmware=5787m-v3.23 latency=0 multicast=yes port=twisted pair
+                resources: irq:47 memory:f6000000-f600ffff
+        *-pci:2
+             description: PCI bridge
+             product: 82801H (ICH8 Family) PCI Express Port 2
+             vendor: Intel Corporation
+             physical id: 1c.1
+             bus info: pci@0000:00:1c.1
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:42 ioport:4000(size=4096) memory:f8000000-f9ffffff ioport:f2000000(size=33554432)
+           *-network
+                description: Wireless interface
+                product: PRO/Wireless 3945ABG [Golan] Network Connection
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:04:00.0
+                logical name: wlan0
+                version: 02
+                serial: 00:1b:77:9e:ad:ff
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=iwl3945 driverversion=3.0.0-12-generic firmware=15.32.2.9 ip=192.168.0.111 latency=0 multicast=yes wireless=IEEE 802.11abg
+                resources: irq:46 memory:f8000000-f8000fff
+        *-pci:3
+             description: PCI bridge
+             product: 82801H (ICH8 Family) PCI Express Port 3
+             vendor: Intel Corporation
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:43 ioport:5000(size=4096) memory:fa000000-fbffffff ioport:f4000000(size=33554432)
+        *-usb:3
+             description: USB Controller
+             product: 82801H (ICH8 Family) USB UHCI Controller #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:23 ioport:1840(size=32)
+        *-usb:4
+             description: USB Controller
+             product: 82801H (ICH8 Family) USB UHCI Controller #2
+             vendor: Intel Corporation
+             physical id: 1d.1
+             bus info: pci@0000:00:1d.1
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:17 ioport:1860(size=32)
+        *-usb:5
+             description: USB Controller
+             product: 82801H (ICH8 Family) USB UHCI Controller #3
+             vendor: Intel Corporation
+             physical id: 1d.2
+             bus info: pci@0000:00:1d.2
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:18 ioport:1880(size=32)
+        *-usb:6
+             description: USB Controller
+             product: 82801H (ICH8 Family) USB2 EHCI Controller #1
+             vendor: Intel Corporation
+             physical id: 1d.7
+             bus info: pci@0000:00:1d.7
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ehci bus_master cap_list
+             configuration: driver=ehci_hcd latency=0
+             resources: irq:23 memory:fc404c00-fc404fff
+        *-pci:4
+             description: PCI bridge
+             product: 82801 Mobile PCI Bridge
+             vendor: Intel Corporation
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: f3
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci subtractive_decode bus_master cap_list
+             resources: ioport:6000(size=4096) memory:fc100000-fc1fffff ioport:80000000(size=67108864)
+           *-pcmcia
+                description: CardBus bridge
+                product: PCIxx12 Cardbus Controller
+                vendor: Texas Instruments
+                physical id: 6
+                bus info: pci@0000:0f:06.0
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pcmcia bus_master cap_list
+                configuration: driver=yenta_cardbus latency=176 maxlatency=5 mingnt=192
+                resources: irq:22 memory:fc100000-fc100fff ioport:6000(size=256) ioport:6400(size=256) memory:80000000-83ffffff memory:88000000-8bffffff
+           *-firewire
+                description: FireWire (IEEE 1394)
+                product: PCIxx12 OHCI Compliant IEEE 1394 Host Controller
+                vendor: Texas Instruments
+                physical id: 6.1
+                bus info: pci@0000:0f:06.1
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: ohci bus_master cap_list
+                configuration: driver=firewire_ohci latency=32 maxlatency=4 mingnt=2
+                resources: irq:22 memory:fc102000-fc1027ff memory:fc104000-fc107fff
+           *-storage
+                description: Mass storage controller
+                product: 5-in-1 Multimedia Card Reader (SD/MMC/MS/MS PRO/xD)
+                vendor: Texas Instruments
+                physical id: 6.2
+                bus info: pci@0000:0f:06.2
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: storage bus_master cap_list
+                configuration: driver=tifm_7xx1 latency=57 maxlatency=4 mingnt=7
+                resources: irq:22 memory:fc101000-fc101fff
+           *-generic
+                description: SD Host controller
+                product: PCIxx12 SDA Standard Compliant SD Host Controller
+                vendor: Texas Instruments
+                physical id: 6.3
+                bus info: pci@0000:0f:06.3
+                version: 00
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=sdhci-pci latency=57 maxlatency=4 mingnt=7
+                resources: irq:22 memory:fc102800-fc1028ff
+        *-isa
+             description: ISA bridge
+             product: 82801HEM (ICH8M) LPC Interface Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: latency=0
+        *-ide
+             description: IDE interface
+             product: 82801HBM/HEM (ICH8M/ICH8M-E) IDE Controller
+             vendor: Intel Corporation
+             physical id: 1f.1
+             bus info: pci@0000:00:1f.1
+             logical name: scsi0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ide bus_master emulated
+             configuration: driver=ata_piix latency=0
+             resources: irq:19 ioport:1f0(size=8) ioport:3f6 ioport:170(size=8) ioport:376 ioport:18a0(size=16)
+           *-cdrom
+                description: DVD-RAM writer
+                product: DVD A  DS8A1P
+                vendor: Slimtype
+                physical id: 0.0.0
+                bus info: scsi@0:0.0.0
+                logical name: /dev/cdrom
+                logical name: /dev/cdrw
+                logical name: /dev/dvd
+                logical name: /dev/dvdrw
+                logical name: /dev/scd0
+                logical name: /dev/sr0
+                version: CA11
+                capabilities: removable audio cd-r cd-rw dvd dvd-r dvd-ram
+                configuration: ansiversion=5 status=nodisc
+        *-storage
+             description: SATA controller
+             product: 82801HBM/HEM (ICH8M/ICH8M-E) SATA AHCI Controller
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 03
+             width: 32 bits
+             clock: 66MHz
+             capabilities: storage ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:44 ioport:18d8(size=8) ioport:18cc(size=4) ioport:18d0(size=8) ioport:18c8(size=4) ioport:18e0(size=32) memory:fc404000-fc4047ff
+        *-serial UNCLAIMED
+             description: SMBus
+             product: 82801H (ICH8 Family) SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: memory:84000000-840000ff ioport:1c00(size=32)
+

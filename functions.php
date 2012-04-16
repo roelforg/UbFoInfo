@@ -1,5 +1,16 @@
 <?php
+include "logger.php";
+include "reporter.php";
 include "display.php";
 include "cli.php";
+include "gui.php";
 include "subsys.php";
+
+class data {
+
+	public static $elements = array(
+	"networking"=>"Network problems"
+	);
+
+};
 
